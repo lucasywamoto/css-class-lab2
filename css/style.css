@@ -1,0 +1,221 @@
+/* >>> START OF LAB REQUIREMENTS <<< */
+
+/* 2.Style links in the footer to change color when hovered over. */
+/* 4.Style any links within the footer that are also hovered over with an underline. */
+ul li a:hover {
+    color: #FFB000;
+    text-decoration: underline;
+}
+
+ul li a:visited {
+    color: gray;
+}
+
+/* 2.Style the first and last journal entries differently using :first-child and
+:last-child. */
+article:first-child {
+    background-color: #525ee13e;
+}
+
+article:last-child {
+    background-color: #525ee13e;
+}
+
+/* 3.Before each journal entry, use ::before to insert a decorative image or symbol. */
+article::before {
+    content: url(../imgs/journal-bookmark.svg);
+}
+
+/* 3.After each journal entry, use ::after to insert a small footnote or quote. */
+article::after {
+    content: "Excepteur sint occaecat cupidatat";
+    color: rgb(155, 155, 155);
+    font-style: italic;
+}
+
+/* 4.Style any paragraphs within a journal entry that also have a class of "highlight" with a different background and text color. */
+article .highlight {
+    background-color: #FFB000;
+}
+
+.buttons-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+button {
+    background-color: #FFB000;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 24px;
+}
+
+/* 5.Style any input elements with a type of "text" differently than input
+elements with a type of "password". */
+input[type="text"] {
+    width: 150px;
+    color: #525FE1;
+}
+
+/* 5.Create a section with various buttons. Those with a disabled attribute
+should be styled differently than those that are active. */
+button:disabled {
+    background-color: rgb(198, 196, 196);
+}
+
+/* 6.Style any h2 headers that are directly inside a journal entry with a unique font style. */
+article > h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+/* 6.For any img elements inside a div with a class of "gallery", apply a border and hover effect. */
+div.gallery img {
+    border-radius: 24px;
+    border: 3px solid #FFB000;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+div.gallery img:hover {
+    height: 400px;
+}
+
+/* END OF LAB REQUIREMENTS */
+
+/* >>> START OF EXTRA CHALLENGES <<< */
+
+/* 1.Dynamic Entry Highlighting */
+article:hover {
+    background-color: #525ee14f;
+    background: #FFB000;
+    border-color: #FFB000;
+    box-shadow: 12px 12px 24px #FFB0004f;
+}
+
+/* 2.Interactive Gallery */
+img[alt*="landscape"] {
+    transition: 0.3s;
+}
+
+img[alt*="landscape"]:hover {
+    transform: scale(1.2);
+}
+
+/* 3.Custom Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dotted black;
+  }
+  
+  .tooltip:hover::before {
+    content: "Lorem Ipsum";
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 120%;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 24px;
+  }
+  
+/* END OF EXTRA CHALLENGES */
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #525FE1;
+    color: white;
+    padding: 1px 16px;
+    margin-top: 32px;
+    border-radius: 24px;
+    border-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: none;
+}
+
+form > input {
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: none;
+}
+
+input[type="password"] {
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 24px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #FFB000;
+}
+
+article {
+    border-radius: 24px;
+    border: 3px solid #525FE1;
+    margin-top: 32px;
+    padding: 16px;
+    box-shadow: 5px 5px 8px #525ee14f;
+    transition: 0.3s;
+}
+
+h2 {
+    color: #525FE1;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #525FE1;
+    color: white;
+    padding: 1px 32px;
+    margin: 32px 0;
+    border-radius: 24px;
+    border-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 32px;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1.Create an HTML file with the structure for the journal. This should include
+    a header, main content area with multiple entries, and a footer. -->
+    <header>
+        <h1>Journal</h1>
+        <div>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="username" required>              
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>             
+                <input type="submit" value="Login">
+        </div>       
+    </header>
+    <main>
+        <article>
+            <h2>September 15, 2023</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <span class="tooltip">tempor incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="gallery">
+                <img src="imgs/pexels-deepu-b-iyer-38722.jpg" alt="lake landscape">
+            </div>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+            <h2>September 08, 2023</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span class="tooltip">ullamco</span> laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="highlight">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+            <h2>September 01, 2023</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="highlight">Duis aute irure dolor in <span class="tooltip">reprehenderit in voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+            <h2>August 25, 2023</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="gallery">
+                <img src="imgs/pexels-todd-trapani-1373841.jpg" alt="flowers landscape">
+            </div>
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+            <h2>August 18, 2023</h2>
+            <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in <span class="tooltip">reprehenderit</span> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <section class="buttons-section">
+            <button>Option 1</button>
+            <button disabled>Option 2</button>
+            <button disabled>Option 3</button>
+            <button>Option 4</button>
+            <button>Option 5</button>
+            <button disabled>Option 6</button>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#1">link 1</a></li>
+            <li><a href="#2">link 2</a></li>
+            <li><a href="#3">link 3</a></li>
+            <li><a href="#4">link 4</a></li>
+        </ul>
+        <p>&copy; 2023 Journal</p>
+    </footer>
+</body>
+</html>
